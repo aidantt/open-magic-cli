@@ -23,6 +23,8 @@ pub mod cards {
         }
     }
 
+    // TypeCreature contains information relevant to a creature type, namely
+    // name, mana cost, power, toughness. 
     #[derive(Debug)]
     pub struct TypeCreature {
         name: String,
