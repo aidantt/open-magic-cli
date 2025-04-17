@@ -1,13 +1,11 @@
 use crate::mana::Mana;
 
 // Card is an enum that has a known number of variants (card types)
-#[derive(Debug)]
 pub enum Card {
     Land(TypeLand),
     Creature(TypeCreature),
 }
 
-#[derive(Debug)]
 pub struct TypeLand {
     name: String,
     mana_cost: Mana,
@@ -22,7 +20,6 @@ impl TypeLand {
 
 // TypeCreature contains information relevant to a creature type, namely
 // name, mana cost, power, toughness. 
-#[derive(Debug)]
 pub struct TypeCreature {
     name: String,
     mana_cost: Mana,
